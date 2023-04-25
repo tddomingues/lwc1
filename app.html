@@ -17,12 +17,13 @@
 	<lightning-button variant="brand" label="Esconder/Aparecer a Div 1 e 2" title="Primary action"
 		onclick={visibilidadeDiv} class="slds-m-left_x-small"></lightning-button>
 	<br/><br/>
-	<h2><b>Quem é esse pokemon ?</b></h2>
 	<div if:true={visibilidadeImgOculta}>
+		<h2><b>Quem é esse pokemon ?</b></h2>
 		<img src="https://img.playbuzz.com/image/upload/ar_1.5,c_pad,f_jpg,b_auto/q_auto:good,f_auto,fl_lossy,w_640,c_limit,dpr_1/cdn/5dd1da62-7fad-4065-ac16-928d743a2176/7af3b478-4cfa-4fce-8c24-af07c24c38c5.jpg">
 	</div>
 
 	<div if:true={visibilidadeImgResp}>
+		<h2><b>É esse que não sei o nome !</b></h2>
 		<img src="https://img.playbuzz.com/image/upload/ar_1.5,c_pad,f_jpg,b_auto/q_auto:good,f_auto,fl_lossy,w_640,c_limit,dpr_1/cdn/5dd1da62-7fad-4065-ac16-928d743a2176/98a48255-bedb-46d7-8f6e-a54229d3c75d.jpg">
 	</div>
 	<lightning-button variant="brand" label="Resposta" title="Primary action" onclick={verificarImg}
